@@ -40,7 +40,7 @@ import { useLocale } from '../../core/locale';
 import { useInternalTheme } from '../../core/theming';
 import { useReduceMotion } from '../../theme/accessibility/ReduceMotionContext';
 import { cornerFull } from '../../theme/tokens/sys/shape';
-import type { ThemeProp } from '../../types';
+import type { ThemeProp } from '../../theme/types';
 import useLayout from '../../utils/useLayout';
 import Icon, { type IconSource } from '../Icon';
 import Text from '../Typography/Text';
