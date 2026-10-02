@@ -1,0 +1,42 @@
+{
+  "name": "react-native-paper",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/paper",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22",
+      "nodeGypDependencies": true
+    }
+  },
+
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true,
+
+  "forwardPorts": [8081],
+  "portsAttributes": {
+    "8081": {
+      "label": "metro",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "expo.vscode-expo-tools"
+      ]
+    }
+  },
+
+  "containerEnv": {
+    "WAYLAND_DISPLAY": "",
+    // "REACT_NATIVE_PACKAGER_HOSTNAME": ""
+  },
+  "remoteEnv": {
+  	"WAYLAND_DISPLAY": ""
+  }
+}

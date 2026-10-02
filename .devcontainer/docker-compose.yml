@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    command: sleep infinity
+    volumes:
+      - ..:/workspaces/paper:Z
+    ports:
+      -  "8081:8081"
+    userns_mode: "keep-id"
