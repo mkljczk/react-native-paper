@@ -71,7 +71,7 @@ export type Props = Omit<
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { DataTable } from 'react-native-paper';
+ * import { DataTable } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *  <DataTable.Row>
@@ -85,7 +85,7 @@ export type Props = Omit<
  * export default MyComponent;
  * ```
  *
- * @extends TouchableRipple props https://callstack.github.io/react-native-paper/docs/components/TouchableRipple
+ * @extends TouchableRipple props https://callstack.github.io/@mkljczk/react-native-paper/docs/components/TouchableRipple
  */
 const DataTableRow = ({
   onPress,

@@ -1,6 +1,6 @@
 import { Image, StyleSheet, View } from 'react-native';
 
-import { Button, List, Text, useTheme } from 'react-native-paper';
+import { Button, List, Text, useTheme } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

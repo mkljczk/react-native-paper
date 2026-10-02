@@ -100,7 +100,7 @@ export type Props = Omit<
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { IconButton, Palette } from 'react-native-paper';
+ * import { IconButton, Palette } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <IconButton
@@ -114,7 +114,7 @@ export type Props = Omit<
  * export default MyComponent;
  * ```
  *
- * @extends TouchableRipple props https://callstack.github.io/react-native-paper/docs/components/TouchableRipple
+ * @extends TouchableRipple props https://callstack.github.io/@mkljczk/react-native-paper/docs/components/TouchableRipple
  */
 const IconButton = ({
   icon,

@@ -187,7 +187,7 @@ const writeDocusaurusConfigStub = (
   fs.writeFileSync(
     path.join(sourceDir, 'docs', 'docusaurus.config.js'),
     `module.exports = {
-  baseUrl: '/react-native-paper/',
+  baseUrl: '/@mkljczk/react-native-paper/',
   customFields: ${JSON.stringify(customFields)},
 };
 `
@@ -412,7 +412,7 @@ const writeComponentPages = (
           '<PropTable componentLink=',
           '<PropTable componentDocs={componentDocs5x.docs} componentLink='
         )
-        .replaceAll('/react-native-paper/screenshots/', 'screenshots/')
+        .replaceAll('/@mkljczk/react-native-paper/screenshots/', 'screenshots/')
         .replace(/\s+baseUrl="[^"]*"/g, ''),
       relativePath,
       routes
@@ -436,7 +436,7 @@ const main = async () => {
 
   const requireFromScript = createRequire(import.meta.url);
   const tempDir = fs.mkdtempSync(
-    path.join(os.tmpdir(), 'react-native-paper-docs-')
+    path.join(os.tmpdir(), '@mkljczk/react-native-paper-docs-')
   );
 
   try {

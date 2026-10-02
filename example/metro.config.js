@@ -6,5 +6,5 @@ const { withMetroConfig } = require('react-native-monorepo-config');
 module.exports = withMetroConfig(getDefaultConfig(__dirname), {
   root: path.resolve(__dirname, '..'),
   dirname: __dirname,
-  conditions: ['react-native-paper-source'],
+  conditions: ['@mkljczk/react-native-paper-source'],
 });

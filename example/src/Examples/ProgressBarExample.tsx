@@ -8,8 +8,8 @@ import {
   ProgressBar,
   Text,
   useTheme,
-} from 'react-native-paper';
-import type { ProgressBarProps } from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
+import type { ProgressBarProps } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

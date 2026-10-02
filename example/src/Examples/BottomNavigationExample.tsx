@@ -2,11 +2,11 @@ import * as React from 'react';
 import { Dimensions, Image, Platform, StyleSheet, View } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
-import { Appbar, BottomNavigation, Menu } from 'react-native-paper';
+import { Appbar, BottomNavigation, Menu } from '@mkljczk/react-native-paper';
 import type {
   BottomNavigationItemLayout,
   BottomNavigationRoute,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import ScreenWrapper from '../ScreenWrapper';

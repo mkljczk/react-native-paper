@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Platform, StyleSheet } from 'react-native';
 
-import { Button } from 'react-native-paper';
+import { Button } from '@mkljczk/react-native-paper';
 
 import {
   DialogWithCustomColors,

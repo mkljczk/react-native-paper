@@ -29,7 +29,7 @@ import useLayout from '../../utils/useLayout';
  * import React from 'react';
  * import { useState } from 'react';
  * import { View } from 'react-native';
- * import { BottomNavigation, Text, Provider } from 'react-native-paper';
+ * import { BottomNavigation, Text, Provider } from '@mkljczk/react-native-paper';
  *
  * function HomeScreen() {
  *   return (

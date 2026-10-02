@@ -8,12 +8,12 @@ import {
   Text,
   Toolbar,
   useTheme,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 import type {
   ToolbarColorScheme,
   ToolbarOrientation,
   ToolbarVariant,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const variants: ToolbarVariant[] = ['floating', 'docked'];

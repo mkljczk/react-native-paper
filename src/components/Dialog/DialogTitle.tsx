@@ -25,7 +25,7 @@ export type Props = React.ComponentPropsWithRef<typeof Text> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Dialog, Text } from 'react-native-paper';
+ * import { Dialog, Text } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [visible, setVisible] = React.useState(false);

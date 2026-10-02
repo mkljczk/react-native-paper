@@ -20,7 +20,7 @@ const TS_TEST_EXT = '.test.tsx';
 
 const transformContent = (content: string) =>
   content
-    .replace("'react-native-paper'", "'..'")
+    .replace("'@mkljczk/react-native-paper'", "'..'")
     .split('\n')
     .map((e) => e.slice(3))
     .join('\n');

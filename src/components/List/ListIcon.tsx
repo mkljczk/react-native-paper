@@ -30,7 +30,7 @@ const ICON_SIZE = 24;
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List, Palette } from 'react-native-paper';
+ * import { List, Palette } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <>

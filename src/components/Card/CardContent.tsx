@@ -28,7 +28,7 @@ export type Props = ViewProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Card, Text } from 'react-native-paper';
+ * import { Card, Text } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Card>

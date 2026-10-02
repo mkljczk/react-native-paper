@@ -3,7 +3,7 @@
   "version": "6.0.0-alpha.0",
   "description": "Material design for React Native",
   "main": "lib/module/index.js",
-  "react-native-paper-source": "src/index.tsx",
+  "@mkljczk/react-native-paper-source": "src/index.tsx",
   "types": "lib/typescript/src/index.d.ts",
   "files": [
     "src",
@@ -13,14 +13,14 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/callstack/react-native-paper.git"
+    "url": "https://github.com/mkljczk/react-native-paper.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/callstack/react-native-paper/issues"
+    "url": "https://github.com/mkljczk/react-native-paper/issues"
   },
-  "homepage": "https://callstack.github.io/react-native-paper",
+  "homepage": "https://github.com/mkljczk/react-native-paper#readme",
   "keywords": [
     "android",
     "ios",

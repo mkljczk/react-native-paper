@@ -32,7 +32,7 @@ export type Props = ViewProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List, Palette } from 'react-native-paper';
+ * import { List, Palette } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <List.Section>

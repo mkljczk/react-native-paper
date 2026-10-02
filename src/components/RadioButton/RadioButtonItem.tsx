@@ -118,7 +118,7 @@ export type Props = {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { RadioButton } from 'react-native-paper';
+ * import { RadioButton } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [value, setValue] = React.useState('first');

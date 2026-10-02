@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { List } from 'react-native-paper';
+import { List } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

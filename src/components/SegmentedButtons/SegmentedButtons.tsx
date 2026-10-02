@@ -87,7 +87,7 @@ export type Props<T extends string = string> = {
  * ```js
  * import * as React from 'react';
  * import { SafeAreaView, StyleSheet } from 'react-native';
- * import { SegmentedButtons } from 'react-native-paper';
+ * import { SegmentedButtons } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [value, setValue] = React.useState('');

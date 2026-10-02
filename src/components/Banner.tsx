@@ -99,7 +99,7 @@ export type Props = Omit<ViewProps, 'style'> & {
  * ```js
  * import * as React from 'react';
  * import { Image } from 'react-native';
- * import { Banner } from 'react-native-paper';
+ * import { Banner } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [visible, setVisible] = React.useState(true);

@@ -127,7 +127,7 @@ export type Props = {
  * ```js
  * import * as React from 'react';
  * import { StyleSheet } from 'react-native';
- * import { FAB } from 'react-native-paper';
+ * import { FAB } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [expanded, setExpanded] = React.useState(true);

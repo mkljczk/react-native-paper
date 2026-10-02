@@ -90,7 +90,7 @@ export type Props = PressableProps &
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { DataTable } from 'react-native-paper';
+ * import { DataTable } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <DataTable>

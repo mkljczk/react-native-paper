@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
-import { DataTable, Card } from 'react-native-paper';
-import type { DataTableColumn } from 'react-native-paper';
+import { DataTable, Card } from '@mkljczk/react-native-paper';
+import type { DataTableColumn } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

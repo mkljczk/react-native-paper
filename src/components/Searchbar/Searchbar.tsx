@@ -264,7 +264,7 @@ type TextInputHandles = Pick<
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Searchbar } from 'react-native-paper';
+ * import { Searchbar } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [searchQuery, setSearchQuery] = React.useState('');

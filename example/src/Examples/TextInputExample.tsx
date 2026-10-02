@@ -17,7 +17,7 @@ import {
   useTheme,
   type TextInputAccessoryProps,
   type TextInputVariant,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

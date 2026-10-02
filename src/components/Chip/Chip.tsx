@@ -170,7 +170,7 @@ export type Props = Omit<ViewProps, 'style'> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Chip } from 'react-native-paper';
+ * import { Chip } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>

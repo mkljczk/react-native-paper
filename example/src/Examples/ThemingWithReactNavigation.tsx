@@ -8,7 +8,7 @@ import {
 } from '@react-navigation/bottom-tabs';
 import { PlatformPressable } from '@react-navigation/elements';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Text } from 'react-native-paper';
+import { Text } from '@mkljczk/react-native-paper';
 
 function HomeScreen() {
   return (

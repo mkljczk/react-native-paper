@@ -163,7 +163,7 @@ export type Props = BaseProps & ConditionalValue;
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Slider } from 'react-native-paper';
+ * import { Slider } from '@mkljczk/react-native-paper';
  *
  * const Example = () => {
  *   const [value, setValue] = React.useState(50);

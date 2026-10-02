@@ -8,7 +8,7 @@ export default function GetStartedButtons() {
         Get started
       </a>
       <a
-        href="https://snack.expo.dev/@react-native-paper/react-native-paper-example_v5"
+        href="https://snack.expo.dev/@react-native-paper/@mkljczk/react-native-paper-example_v5"
         target="_blank"
         rel="noreferrer"
         className="paper-get-started-button paper-get-started-button--secondary"

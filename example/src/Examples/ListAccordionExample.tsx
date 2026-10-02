@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { List, Divider } from 'react-native-paper';
+import { List, Divider } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

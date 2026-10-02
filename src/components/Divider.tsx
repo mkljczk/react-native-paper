@@ -35,7 +35,7 @@ export type Props = Omit<React.PropsWithoutRef<ViewProps>, 'children'> & {
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { Divider, Text } from 'react-native-paper';
+ * import { Divider, Text } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <View>

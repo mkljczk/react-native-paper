@@ -83,7 +83,7 @@ const HIT_SLOP = getMinTouchTargetHitSlop(stateLayerSize);
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { RadioButton } from 'react-native-paper';
+ * import { RadioButton } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [checked, setChecked] = React.useState('first');
@@ -107,7 +107,7 @@ const HIT_SLOP = getMinTouchTargetHitSlop(stateLayerSize);
  * export default MyComponent;
  * ```
  *
- * @extends TouchableRipple props https://callstack.github.io/react-native-paper/docs/components/TouchableRipple
+ * @extends TouchableRipple props https://callstack.github.io/@mkljczk/react-native-paper/docs/components/TouchableRipple
  */
 const RadioButton = ({
   disabled,

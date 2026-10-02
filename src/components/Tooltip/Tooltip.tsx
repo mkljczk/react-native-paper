@@ -69,7 +69,7 @@ export type Props = {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { IconButton, Tooltip } from 'react-native-paper';
+ * import { IconButton, Tooltip } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Tooltip title="Selected Camera">

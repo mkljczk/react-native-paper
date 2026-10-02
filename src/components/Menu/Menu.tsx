@@ -146,7 +146,7 @@ const isCoordinate = (anchor: any): anchor is { x: number; y: number } =>
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { Button, Menu, Divider, PaperProvider } from 'react-native-paper';
+ * import { Button, Menu, Divider, PaperProvider } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [visible, setVisible] = React.useState(false);

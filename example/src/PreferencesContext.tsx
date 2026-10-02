@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import type { Theme } from 'react-native-paper';
+import type { Theme } from '@mkljczk/react-native-paper';
 
 type ContrastLevel = 'standard' | 'medium' | 'high';
 

@@ -43,7 +43,7 @@ export const PortalContext = React.createContext<PortalMethods>(null as any);
  * ```js
  * import * as React from 'react';
  * import { Text } from 'react-native';
- * import { Portal } from 'react-native-paper';
+ * import { Portal } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Portal.Host>

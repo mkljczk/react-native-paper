@@ -24,7 +24,7 @@ export type Props = ViewProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Button, Dialog } from 'react-native-paper';
+ * import { Button, Dialog } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [visible, setVisible] = React.useState(false);

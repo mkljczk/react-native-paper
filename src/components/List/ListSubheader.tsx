@@ -27,7 +27,7 @@ export type Props = React.ComponentProps<typeof Text> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List } from 'react-native-paper';
+ * import { List } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => <List.Subheader>My List Title</List.Subheader>;
  *

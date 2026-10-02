@@ -107,7 +107,7 @@ export type Props = {
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { Checkbox } from 'react-native-paper';
+ * import { Checkbox } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <View>

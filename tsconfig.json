@@ -2,10 +2,10 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-paper": ["./src/index"]
+      "@mkljczk/react-native-paper": ["./src/index"]
     },
     "noEmit": true,
-    "customConditions": ["react-native-paper-source"],
+    "customConditions": ["@mkljczk/react-native-paper-source"],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "allowImportingTsExtensions": true,

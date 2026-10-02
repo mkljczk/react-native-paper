@@ -16,7 +16,7 @@ import {
   Text,
   TextInput,
   useTheme,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 
 import { useColorMode } from './theme-common';
 

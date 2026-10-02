@@ -37,7 +37,7 @@ export type Props = {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Portal, Text } from 'react-native-paper';
+ * import { Portal, Text } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Portal>

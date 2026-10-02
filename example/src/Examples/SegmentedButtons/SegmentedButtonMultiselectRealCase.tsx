@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 
-import { Card, IconButton, SegmentedButtons } from 'react-native-paper';
+import { Card, IconButton, SegmentedButtons } from '@mkljczk/react-native-paper';
 
 import { restaurantsData } from '../../../utils';
 

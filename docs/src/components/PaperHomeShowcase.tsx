@@ -36,7 +36,7 @@ const renderGallery = (images: string[]) =>
       alt=""
       className="paper-home-showcase__gallery-image"
       key={imageName}
-      src={`/react-native-paper/gallery/${imageName}`}
+      src={`/@mkljczk/react-native-paper/gallery/${imageName}`}
     />
   ));
 
@@ -58,7 +58,7 @@ export default function PaperHomeShowcase() {
 
       <div className="paper-home-showcase__links">
         Or check the demo app on{' '}
-        <a href="https://apps.apple.com/app/react-native-paper/id1548934513">
+        <a href="https://apps.apple.com/app/@mkljczk/react-native-paper/id1548934513">
           iOS
         </a>{' '}
         or{' '}

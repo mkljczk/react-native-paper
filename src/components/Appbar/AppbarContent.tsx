@@ -73,7 +73,7 @@ export type Props = Omit<React.PropsWithoutRef<ViewProps>, 'children'> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Appbar } from 'react-native-paper';
+ * import { Appbar } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Appbar.Header>

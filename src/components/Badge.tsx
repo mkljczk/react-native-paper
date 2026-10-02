@@ -39,7 +39,7 @@ export type Props = Omit<TextProps, 'style'> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Badge } from 'react-native-paper';
+ * import { Badge } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Badge>3</Badge>

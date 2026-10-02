@@ -107,7 +107,7 @@ const CHECKED_CENTER = TRACK_WIDTH - HANDLE_PADDING - SELECTED_HANDLE / 2;
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Switch } from 'react-native-paper';
+ * import { Switch } from '@mkljczk/react-native-paper';
  *
  * const Example = () => {
  *   const [on, setOn] = React.useState(false);

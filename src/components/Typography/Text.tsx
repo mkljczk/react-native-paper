@@ -48,7 +48,7 @@ export type TextRef = {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Text } from 'react-native-paper';
+ * import { Text } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Text, Text as NativeText, useTheme } from 'react-native-paper';
+import { Text, Text as NativeText, useTheme } from '@mkljczk/react-native-paper';
 type Props = React.ComponentProps<typeof NativeText> & {
   isSubheading?: boolean;
 };

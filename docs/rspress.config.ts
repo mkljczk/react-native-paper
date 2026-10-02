@@ -6,7 +6,7 @@ import path from 'node:path';
 import componentDocsConfig from './component-docs.config.ts';
 import { pluginComponentDocs } from './plugins/component-docs/index.ts';
 
-const REPO_NAME = 'react-native-paper';
+const REPO_NAME = '@mkljczk/react-native-paper';
 const REPO_ORG = 'callstack';
 
 const src = path.resolve(__dirname, 'src');
@@ -56,7 +56,7 @@ export default withCallstackPreset(
     vercelAnalytics: false,
   },
   defineConfig({
-    base: '/react-native-paper/',
+    base: '/@mkljczk/react-native-paper/',
     outDir: 'build',
     globalStyles: path.join(src, 'css', 'custom.css'),
     multiVersion: {
@@ -138,7 +138,7 @@ export default withCallstackPreset(
             resolve('react-native-web'),
             'dist/exports/StyleSheet/preprocess.js'
           ),
-          'react-native-paper': paper,
+          '@mkljczk/react-native-paper': paper,
         },
       },
       tools: {

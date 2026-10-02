@@ -26,7 +26,7 @@ import {
   MediumContrastDynamicLightTheme,
   MediumContrastLightTheme,
   PaperProvider,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import DrawerItems from './DrawerItems';

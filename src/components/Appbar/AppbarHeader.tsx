@@ -55,7 +55,7 @@ export type Props = Omit<AppbarProps, 'safeAreaInsets' | 'style'> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Appbar } from 'react-native-paper';
+ * import { Appbar } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const _goBack = () => console.log('Went back');

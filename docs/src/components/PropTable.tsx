@@ -2,15 +2,15 @@ import Markdown from './Markdown';
 
 const typeDefinitions: Record<string, string> = {
   IconSource:
-    'https://github.com/callstack/react-native-paper/blob/main/components/Icon.tsx#L16',
+    'https://github.com/callstack/@mkljczk/react-native-paper/blob/main/components/Icon.tsx#L16',
   ThemeProp:
-    'https://callstack.github.io/react-native-paper/docs/guides/theming#theme-properties',
+    'https://callstack.github.io/@mkljczk/react-native-paper/docs/guides/theming#theme-properties',
   '(props: TextInputAccessoryProps) => React.ReactNode':
-    'https://github.com/callstack/react-native-paper/blob/main/components/TextInput/TextInputIcon.tsx#L11',
+    'https://github.com/callstack/@mkljczk/react-native-paper/blob/main/components/TextInput/TextInputIcon.tsx#L11',
   '(props: TextInputRenderProps) => React.ReactNode':
-    'https://github.com/callstack/react-native-paper/blob/main/components/TextInput/TextInput.tsx#L168',
+    'https://github.com/callstack/@mkljczk/react-native-paper/blob/main/components/TextInput/TextInput.tsx#L168',
   'React.Ref<TextInputHandles>':
-    'https://github.com/callstack/react-native-paper/blob/main/components/TextInput/TextInput.tsx#L172',
+    'https://github.com/callstack/@mkljczk/react-native-paper/blob/main/components/TextInput/TextInput.tsx#L172',
   AccessibilityState:
     'https://reactnative.dev/docs/accessibility#accessibilitystate',
   'StyleProp<ViewStyle>': 'https://reactnative.dev/docs/view-style-props',
@@ -80,7 +80,7 @@ const renderPropDetails = ({
             href={tsTypeLink}
             target={
               tsTypeLink.startsWith(
-                'https://callstack.github.io/react-native-paper'
+                'https://callstack.github.io/@mkljczk/react-native-paper'
               )
                 ? '_self'
                 : '_blank'

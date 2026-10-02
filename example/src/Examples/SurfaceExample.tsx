@@ -8,8 +8,8 @@ import {
   List,
   IconButton,
   useTheme,
-} from 'react-native-paper';
-import type { Elevation, SurfaceRole } from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
+import type { Elevation, SurfaceRole } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

@@ -6,7 +6,7 @@ import {
   Dialog,
   RadioButton,
   TouchableRipple,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 
 import { TextComponent } from './DialogTextComponent';
 

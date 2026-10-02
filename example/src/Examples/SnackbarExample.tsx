@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { Snackbar, Button, List, Text, Switch } from 'react-native-paper';
+import { Snackbar, Button, List, Text, Switch } from '@mkljczk/react-native-paper';
 
 import { PreferencesContext } from '../PreferencesContext';
 import ScreenWrapper from '../ScreenWrapper';

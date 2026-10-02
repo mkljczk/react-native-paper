@@ -59,7 +59,7 @@ const INDETERMINATE_MAX_WIDTH = 0.6;
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { ProgressBar, Palette } from 'react-native-paper';
+ * import { ProgressBar, Palette } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <ProgressBar progress={0.5} color={Palette.error50} />

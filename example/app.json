@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "React Native Paper Example",
-    "description": "Example app for React Native Paper: https://callstack.github.io/react-native-paper/",
-    "slug": "react-native-paper-example",
+    "description": "Example app for React Native Paper: https://callstack.github.io/@mkljczk/react-native-paper/",
+    "slug": "@mkljczk/react-native-paper-example",
     "version": "3.16.0",
     "orientation": "default",
     "primaryColor": "#6200EE",
@@ -13,7 +13,7 @@
       "ios",
       "web"
     ],
-    "owner": "react-native-paper",
+    "owner": "@mkljczk/react-native-paper",
     "ios": {
       "bundleIdentifier": "com.callstack.reactnativepaperexample",
       "buildNumber": "26.0.5"

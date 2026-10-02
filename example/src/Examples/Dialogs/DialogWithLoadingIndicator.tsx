@@ -1,6 +1,6 @@
 import { ActivityIndicator, Platform, StyleSheet, View } from 'react-native';
 
-import { Dialog, Palette } from 'react-native-paper';
+import { Dialog, Palette } from '@mkljczk/react-native-paper';
 
 import { TextComponent } from './DialogTextComponent';
 

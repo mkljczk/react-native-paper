@@ -11,7 +11,7 @@ import {
   SFSymbol,
   MaterialSymbol,
 } from '@react-navigation/native';
-import { Text, BottomNavigation } from 'react-native-paper';
+import { Text, BottomNavigation } from '@mkljczk/react-native-paper';
 
 function HomeScreen() {
   return (

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-paper",
+  "name": "@mkljczk/react-native-paper",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspaces/paper",

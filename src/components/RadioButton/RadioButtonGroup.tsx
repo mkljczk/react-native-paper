@@ -33,7 +33,7 @@ export const RadioButtonContext =
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { RadioButton, Text } from 'react-native-paper';
+ * import { RadioButton, Text } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [value, setValue] = React.useState('first');

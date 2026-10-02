@@ -6,7 +6,7 @@ import {
   createNativeStackScreen,
   type NativeStackHeaderProps,
 } from '@react-navigation/native-stack';
-import { Appbar } from 'react-native-paper';
+import { Appbar } from '@mkljczk/react-native-paper';
 
 import ExampleList, { examples } from './ExampleList';
 import { colorThemes } from '../utils';

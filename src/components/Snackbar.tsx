@@ -111,7 +111,7 @@ const DURATION_LONG = 10000;
  * ```js
  * import * as React from 'react';
  * import { View, StyleSheet } from 'react-native';
- * import { Button, Snackbar } from 'react-native-paper';
+ * import { Button, Snackbar } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [visible, setVisible] = React.useState(false);

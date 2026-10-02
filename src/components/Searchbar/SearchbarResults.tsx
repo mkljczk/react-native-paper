@@ -38,7 +38,7 @@ export type Props = {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Searchbar, List } from 'react-native-paper';
+ * import { Searchbar, List } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [query, setQuery] = React.useState('');

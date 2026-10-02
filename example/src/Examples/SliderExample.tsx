@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { Slider, Switch, Text, useTheme } from 'react-native-paper';
+import { Slider, Switch, Text, useTheme } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

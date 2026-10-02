@@ -158,7 +158,7 @@ export type Props = Omit<ViewProps, 'style'> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Button } from 'react-native-paper';
+ * import { Button } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>

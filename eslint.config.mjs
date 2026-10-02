@@ -240,13 +240,13 @@ export default defineConfig(
       'react/prop-types': 'off',
     },
     settings: {
-      'import/core-modules': ['react-native-paper'],
+      'import/core-modules': ['@mkljczk/react-native-paper'],
     },
   },
   {
     files: ['docs/**/*.{js,ts,tsx}'],
     settings: {
-      'import/core-modules': ['@rspress/core/runtime', 'react-native-paper'],
+      'import/core-modules': ['@rspress/core/runtime', '@mkljczk/react-native-paper'],
     },
   },
   {

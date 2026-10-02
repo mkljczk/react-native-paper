@@ -1,6 +1,6 @@
 import { StyleSheet, View, Image } from 'react-native';
 
-import { Icon, List } from 'react-native-paper';
+import { Icon, List } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

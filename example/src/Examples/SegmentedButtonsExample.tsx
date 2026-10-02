@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import { List } from 'react-native-paper';
+import { List } from '@mkljczk/react-native-paper';
 
 import {
   SegmentedButtonDefault,

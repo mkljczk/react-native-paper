@@ -1,7 +1,7 @@
 import { FlatList } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
-import { Divider, List, useTheme } from 'react-native-paper';
+import { Divider, List, useTheme } from '@mkljczk/react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import ActivityIndicatorExample from './Examples/ActivityIndicatorExample';

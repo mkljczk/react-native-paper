@@ -97,7 +97,7 @@ export type Props = Omit<ViewProps, 'style'> & {
  * ```js
  * import * as React from 'react';
  * import { StyleSheet, View } from 'react-native';
- * import { Toolbar, IconButton } from 'react-native-paper';
+ * import { Toolbar, IconButton } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <View style={styles.anchor} pointerEvents="box-none">

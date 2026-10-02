@@ -39,7 +39,7 @@ const DURATION = 2400;
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { ActivityIndicator, Palette } from 'react-native-paper';
+ * import { ActivityIndicator, Palette } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <ActivityIndicator animating={true} color={Palette.error50} />

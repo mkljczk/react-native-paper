@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Dimensions, Image, Platform, StyleSheet, View } from 'react-native';
 
-import { Banner, FAB, Palette, useTheme } from 'react-native-paper';
+import { Banner, FAB, Palette, useTheme } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

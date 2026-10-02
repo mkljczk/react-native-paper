@@ -78,7 +78,7 @@ export type Props = ViewProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { DataTable } from 'react-native-paper';
+ * import { DataTable } from '@mkljczk/react-native-paper';
  *
  * const columns = [
  *   { key: 'name', flex: 2 },

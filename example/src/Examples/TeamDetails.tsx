@@ -20,7 +20,7 @@ import {
   IconButton,
   FAB,
   PaperProvider,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { colorThemes, teamResultsData } from '../../utils';

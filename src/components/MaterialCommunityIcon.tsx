@@ -59,9 +59,9 @@ const IconModule = loadIconModule();
 
 const FallbackIcon = ({ name, color, size, ...rest }: IconProps) => {
   console.warn(
-    `Tried to use the icon '${name}' in a component from 'react-native-paper', but the required icon library is not installed.`,
+    `Tried to use the icon '${name}' in a component from '@mkljczk/react-native-paper', but the required icon library is not installed.`,
     `To fix this, please install '@react-native-vector-icons/material-design-icons'.\n\n` +
-      `You can also use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons`
+      `You can also use another method to specify icon: https://callstack.github.io/@mkljczk/react-native-paper/docs/guides/icons`
   );
 
   return (

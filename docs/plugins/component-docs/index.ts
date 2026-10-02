@@ -122,7 +122,7 @@ const writeNavigation = (
 export const pluginComponentDocs = (
   options: ComponentDocsPluginOptions
 ): RspressPlugin => ({
-  name: 'react-native-paper-component-docs',
+  name: '@mkljczk/react-native-paper-component-docs',
   builderConfig: {
     dev: {
       watchFiles: {

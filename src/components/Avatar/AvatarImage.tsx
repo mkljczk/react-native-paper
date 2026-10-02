@@ -65,7 +65,7 @@ export type Props = ViewProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Avatar } from 'react-native-paper';
+ * import { Avatar } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Avatar.Image size={24} source={require('../assets/avatar.png')} />

@@ -46,7 +46,7 @@ export type TextInputIconProps = TextInputAccessoryProps &
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { TextInput } from 'react-native-paper';
+ * import { TextInput } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [text, setText] = React.useState('');
@@ -73,7 +73,7 @@ export type TextInputIconProps = TextInputAccessoryProps &
  * export default MyComponent;
  * ```
  *
- * @extends IconButton props https://callstack.github.io/react-native-paper/docs/components/IconButton
+ * @extends IconButton props https://callstack.github.io/@mkljczk/react-native-paper/docs/components/IconButton
  */
 const TextInputIcon = ({
   icon,

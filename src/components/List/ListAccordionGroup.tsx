@@ -32,7 +32,7 @@ export const ListAccordionGroupContext =
  * ```js
  * import * as React from 'react';
  * import { View, Text } from 'react-native';
- * import { List } from 'react-native-paper';
+ * import { List } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <List.AccordionGroup>

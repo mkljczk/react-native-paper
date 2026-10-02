@@ -129,7 +129,7 @@ export type Props = Omit<
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List } from 'react-native-paper';
+ * import { List } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <List.Item
@@ -142,7 +142,7 @@ export type Props = Omit<
  * export default MyComponent;
  * ```
  *
- * @extends TouchableRipple props https://callstack.github.io/react-native-paper/docs/components/TouchableRipple
+ * @extends TouchableRipple props https://callstack.github.io/@mkljczk/react-native-paper/docs/components/TouchableRipple
  */
 const ListItem = ({
   left,

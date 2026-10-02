@@ -69,7 +69,7 @@ const DIALOG_ELEVATION: Elevation = 3;
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { Button, Dialog, PaperProvider, Text } from 'react-native-paper';
+ * import { Button, Dialog, PaperProvider, Text } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [visible, setVisible] = React.useState(false);

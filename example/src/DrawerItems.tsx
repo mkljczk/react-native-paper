@@ -15,7 +15,7 @@ import {
   Text,
   TouchableRipple,
   useTheme,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 
 import { dynamicThemeSupported } from '../utils';
 import { PreferencesContext } from './PreferencesContext';
@@ -252,7 +252,7 @@ function DrawerItems() {
           )}
           <Text variant="bodySmall" style={styles.annotation}>
             React Native Paper Version{' '}
-            {require('react-native-paper/package.json').version}
+            {require('@mkljczk/react-native-paper/package.json').version}
           </Text>
         </>
       )}

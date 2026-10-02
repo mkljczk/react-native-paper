@@ -106,7 +106,7 @@ export type Props = {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Button, IconButton, Tooltip } from 'react-native-paper';
+ * import { Button, IconButton, Tooltip } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Tooltip.Rich

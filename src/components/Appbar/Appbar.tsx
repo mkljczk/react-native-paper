@@ -68,7 +68,7 @@ export type Props = Omit<Partial<ViewProps>, 'style'> & {
  * ### Top bar
  * ```js
  * import * as React from 'react';
- * import { Appbar } from 'react-native-paper';
+ * import { Appbar } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Appbar.Header>
@@ -86,7 +86,7 @@ export type Props = Omit<Partial<ViewProps>, 'style'> & {
  * ```js
  * import * as React from 'react';
  * import { StyleSheet } from 'react-native';
- * import { Appbar, FAB, useTheme } from 'react-native-paper';
+ * import { Appbar, FAB, useTheme } from '@mkljczk/react-native-paper';
  * import { useSafeAreaInsets } from 'react-native-safe-area-context';
  *
  * const BOTTOM_APPBAR_HEIGHT = 80;

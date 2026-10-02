@@ -167,7 +167,7 @@ export type Props = Omit<ViewProps, 'pointerEvents' | 'style'> &
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Surface, Text } from 'react-native-paper';
+ * import { Surface, Text } from '@mkljczk/react-native-paper';
  * import { StyleSheet } from 'react-native';
  *
  * const MyComponent = () => (

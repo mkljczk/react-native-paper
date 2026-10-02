@@ -12,7 +12,7 @@ import {
   Switch,
   Text,
   useTheme,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type FabType = 'icon' | 'extended' | 'extendedTransforming' | 'menu';

@@ -29,7 +29,7 @@ export type Props = ImageProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Card } from 'react-native-paper';
+ * import { Card } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Card>

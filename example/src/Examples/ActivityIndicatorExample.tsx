@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { ActivityIndicator, FAB, List, Palette } from 'react-native-paper';
+import { ActivityIndicator, FAB, List, Palette } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

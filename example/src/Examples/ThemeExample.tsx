@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
-import { List, PaperProvider, Banner } from 'react-native-paper';
+import { List, PaperProvider, Banner } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

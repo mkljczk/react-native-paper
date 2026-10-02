@@ -6,7 +6,7 @@ import {
   RadioButton,
   Text,
   TouchableRipple,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

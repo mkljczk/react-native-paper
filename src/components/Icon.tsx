@@ -84,7 +84,7 @@ export type Props = IconProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Icon, Palette } from 'react-native-paper';
+ * import { Icon, Palette } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Icon

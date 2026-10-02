@@ -279,7 +279,7 @@ const defaultRenderer = (props: TextInputRenderProps) => (
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { TextInput } from 'react-native-paper';
+ * import { TextInput } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [text, setText] = React.useState('');

@@ -67,7 +67,7 @@ export type Props = Omit<
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { DataTable } from 'react-native-paper';
+ * import { DataTable } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <DataTable.Row>
@@ -82,10 +82,10 @@ export type Props = Omit<
  * ```
  *
  * Cell text is clamped to a single line by default, in line with MD guidance
- * (https://github.com/callstack/react-native-paper/issues/2381). Pass
+ * (https://github.com/callstack/@mkljczk/react-native-paper/issues/2381). Pass
  * `numberOfLines` to allow more..
  *
- * @extends TouchableRipple props https://callstack.github.io/react-native-paper/docs/components/TouchableRipple
+ * @extends TouchableRipple props https://callstack.github.io/@mkljczk/react-native-paper/docs/components/TouchableRipple
  */
 const DataTableCell = ({
   children,

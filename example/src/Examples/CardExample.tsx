@@ -9,7 +9,7 @@ import {
   IconButton,
   Text,
   useTheme,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';
 
 import { PreferencesContext } from '../PreferencesContext';
 import ScreenWrapper from '../ScreenWrapper';

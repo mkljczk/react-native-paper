@@ -102,7 +102,7 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Modal, Text, Button, PaperProvider } from 'react-native-paper';
+ * import { Modal, Text, Button, PaperProvider } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [visible, setVisible] = React.useState(false);

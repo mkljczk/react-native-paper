@@ -121,7 +121,7 @@ export type Props = {
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { Menu } from 'react-native-paper';
+ * import { Menu } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <View style={{ flex: 1 }}>

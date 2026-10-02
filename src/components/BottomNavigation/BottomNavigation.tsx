@@ -95,7 +95,7 @@ export type Props<Route extends BaseRoute> = Omit<
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { BottomNavigation, Text } from 'react-native-paper';
+ * import { BottomNavigation, Text } from '@mkljczk/react-native-paper';
  *
  * const MusicRoute = () => <Text>Music</Text>;
  *

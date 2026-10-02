@@ -11,4 +11,4 @@ import {
   ThemeProvider,
   withTheme,
   LightTheme,
-} from 'react-native-paper';
+} from '@mkljczk/react-native-paper';

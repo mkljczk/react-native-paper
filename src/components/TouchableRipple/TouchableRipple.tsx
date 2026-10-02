@@ -86,7 +86,7 @@ export type Props = PressableProps & {
  * ```js
  * import * as React from 'react';
  * import { View } from 'react-native';
- * import { Text, TouchableRipple } from 'react-native-paper';
+ * import { Text, TouchableRipple } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <TouchableRipple

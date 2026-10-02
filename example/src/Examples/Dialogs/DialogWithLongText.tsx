@@ -1,6 +1,6 @@
 import { Dimensions, ScrollView, StyleSheet } from 'react-native';
 
-import { Button, Dialog } from 'react-native-paper';
+import { Button, Dialog } from '@mkljczk/react-native-paper';
 
 import { TextComponent } from './DialogTextComponent';
 

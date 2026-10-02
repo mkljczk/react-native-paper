@@ -95,7 +95,7 @@ const FOCUS_RING_RADIUS = STATE_LAYER_SIZE / 2;
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Checkbox } from 'react-native-paper';
+ * import { Checkbox } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => {
  *   const [checked, setChecked] = React.useState(false);

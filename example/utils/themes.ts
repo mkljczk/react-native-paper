@@ -3,8 +3,8 @@ import {
   DefaultTheme as NavigationDefaultTheme,
 } from '@react-navigation/native';
 import type { Theme as ReactNavigationTheme } from '@react-navigation/native';
-import { adaptNavigationTheme, configureFonts } from 'react-native-paper';
-import type { Theme } from 'react-native-paper';
+import { adaptNavigationTheme, configureFonts } from '@mkljczk/react-native-paper';
+import type { Theme } from '@mkljczk/react-native-paper';
 
 /**
  * Merges the React Navigation theme into a Paper theme.

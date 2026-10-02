@@ -3,7 +3,7 @@
   "compilerOptions": {
     "paths": {
       "@docs/*": ["./src/*"],
-      "react-native-paper": ["../src/index"]
+      "@mkljczk/react-native-paper": ["../src/index"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"]

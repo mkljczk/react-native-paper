@@ -87,7 +87,7 @@ const outlineHeight = 32;
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Drawer } from 'react-native-paper';
+ * import { Drawer } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Drawer.CollapsedItem

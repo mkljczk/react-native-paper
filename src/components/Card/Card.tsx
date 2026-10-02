@@ -106,7 +106,7 @@ export type Props = Omit<ViewProps, 'style'> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Avatar, Button, Card, Text } from 'react-native-paper';
+ * import { Avatar, Button, Card, Text } from '@mkljczk/react-native-paper';
  *
  * const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
  *

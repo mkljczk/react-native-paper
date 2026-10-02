@@ -36,7 +36,7 @@ export type Props = ViewProps & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Avatar } from 'react-native-paper';
+ * import { Avatar } from '@mkljczk/react-native-paper';
  *
  * const MyComponent = () => (
  *   <Avatar.Icon size={24} icon="folder" />

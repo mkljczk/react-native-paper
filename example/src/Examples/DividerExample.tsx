@@ -1,6 +1,6 @@
 import { FlatList } from 'react-native';
 
-import { Divider, List, useTheme } from 'react-native-paper';
+import { Divider, List, useTheme } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

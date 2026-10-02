@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import type { ScrollViewProps, StyleProp, ViewStyle } from 'react-native';
 
-import { useTheme } from 'react-native-paper';
+import { useTheme } from '@mkljczk/react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type Props = ScrollViewProps & {

@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
-import { DataTable } from 'react-native-paper';
+import { DataTable } from '@mkljczk/react-native-paper';
 
 import { teamsList, type colorThemes } from '../../utils';
 import ScreenWrapper from '../ScreenWrapper';

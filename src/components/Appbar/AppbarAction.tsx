@@ -54,7 +54,7 @@ export type Props = React.PropsWithoutRef<IconButtonProps> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { Appbar } from 'react-native-paper';
+ * import { Appbar } from '@mkljczk/react-native-paper';
  * import { Platform } from 'react-native';
  *
  * const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';

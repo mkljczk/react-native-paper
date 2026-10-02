@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 
 import color from 'color';
-import { Chip, List, Palette, Snackbar, Text } from 'react-native-paper';
+import { Chip, List, Palette, Snackbar, Text } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 

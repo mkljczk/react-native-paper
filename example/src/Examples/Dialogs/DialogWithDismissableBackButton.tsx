@@ -1,4 +1,4 @@
-import { Button, Dialog, Palette } from 'react-native-paper';
+import { Button, Dialog, Palette } from '@mkljczk/react-native-paper';
 
 import { TextComponent } from './DialogTextComponent';
 

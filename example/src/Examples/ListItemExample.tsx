@@ -1,4 +1,4 @@
-import { List, Divider, Checkbox, Avatar, Switch } from 'react-native-paper';
+import { List, Divider, Checkbox, Avatar, Switch } from '@mkljczk/react-native-paper';
 
 import ScreenWrapper from '../ScreenWrapper';
 
