@@ -273,6 +273,21 @@ The `overlayAccessibilityLabel` prop was renamed to `dismissAccessibilityLabel`:
   <Menu.Item title="Item" />
 </Menu>
 ```
+### RadioButton
+
+`RadioButton` renders one Material 3 circular radio control on every platform. The platform-specific components and their prop types are gone. On iOS checked controls no longer render a checkmark; they use the same ring-and-dot indicator as other platforms. `RadioButton` now also forwards `TouchableRipple` props (`accessible`, `onFocus`, `onBlur`, `borderless`, `rippleColor`, ...).
+
+| v5                                               | v6                                                                      |
+| ------------------------------------------------ | ----------------------------------------------------------------------- |
+| `RadioButton.Android`, `RadioButton.IOS`         | `RadioButton`                                                           |
+| `RadioButtonAndroidProps`, `RadioButtonIOSProps` | `RadioButtonProps`                                                      |
+| `RadioButton.Item` `mode="android" \| "ios"`     | `mode` removed; `RadioButton.Item` always renders `RadioButton`         |
+| n/a                                              | new `error` (uses `theme.colors.error`) and `style` (state-layer style) |
+
+```diff
+- <RadioButton.IOS value="first" status="checked" onPress={select} />
++ <RadioButton value="first" status="checked" onPress={select} />
+```
 
 ### Tooltip
 
@@ -332,11 +347,10 @@ this replaces the built-in margin and disables the focus animation:
 />
 ```
 
-<<<<<<< HEAD
 Any horizontal margin, including `margin`, disables the built-in focus
 animation. Use `marginVertical` when you only need vertical spacing and want to
 keep the animated horizontal margins.
-=======
+
 ### FAB
 
 To preserve the v5 FAB color treatment, update the `variant` prop:
@@ -363,7 +377,6 @@ For custom colors, replace `color` with `contentColor` and move
 + style={{ position: 'absolute', bottom: 16, right: 16 }}
 />
 ```
->>>>>>> likevy/fix/fab-md3-spec-accuracy
 
 ### TextInput
 
