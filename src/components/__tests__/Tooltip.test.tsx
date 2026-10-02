@@ -186,7 +186,7 @@ describe('Tooltip', () => {
       it('hides the tooltip when the user stop pressing the component', async () => {
         const {
           wrapper: { queryByText, getByText, findByText },
-        } = await setup({ enterTouchDelay: 50, leaveTouchDelay: 100 });
+        } = await setup({ enterTouchDelay: 50, leaveTouchDelay: 0 });
 
         // `longPress` includes the release (pressOut), which schedules the hide.
         await user.longPress(getTrigger(getByText));
