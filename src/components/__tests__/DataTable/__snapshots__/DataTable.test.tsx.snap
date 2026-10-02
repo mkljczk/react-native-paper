@@ -1045,6 +1045,14 @@ exports[`DataTable.Cell renders element content verbatim, without a text contain
     centered={true}
     collapsable={false}
     focusable={true}
+    hitSlop={
+      {
+        "bottom": 4,
+        "left": 4,
+        "right": 4,
+        "top": 4,
+      }
+    }
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
