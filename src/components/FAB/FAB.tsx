@@ -21,7 +21,7 @@ export type Props = {
    */
   icon: IconSource;
   /**
-   * Role-color preset. Defaults to `tonalPrimary`.
+   * Role-color preset. Defaults to `primaryContainer`.
    */
   variant?: Variant;
   /**
@@ -138,7 +138,7 @@ export type Props = {
  */
 const FAB = ({
   icon,
-  variant = 'tonalPrimary',
+  variant = 'primaryContainer',
   size = 'default',
   visible = true,
   onPress,

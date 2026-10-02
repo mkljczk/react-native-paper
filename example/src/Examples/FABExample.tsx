@@ -35,9 +35,10 @@ const variants: FabColor[] = [
   'primary',
   'secondary',
   'tertiary',
-  'tonalPrimary',
-  'tonalSecondary',
-  'tonalTertiary',
+  'primaryContainer',
+  'secondaryContainer',
+  'tertiaryContainer',
+  'branded',
   'custom',
 ];
 
@@ -92,7 +93,7 @@ const FABExample = () => {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
 
-  const [variant, setVariant] = React.useState<FabColor>('tonalPrimary');
+  const [variant, setVariant] = React.useState<FabColor>('primaryContainer');
   const activeVariant = variant === 'custom' ? undefined : variant;
   const activeContainerColor =
     variant === 'custom' ? CUSTOM_CONTAINER_COLOR : undefined;
@@ -139,12 +140,24 @@ const FABExample = () => {
       <View style={styles.controls}>
         <ChipRow
           label="Color"
-          options={variants}
+          options={
+            type === 'menu' ? variants.filter((v) => v !== 'branded') : variants
+          }
           value={variant}
           onChange={setVariant}
         />
         <ChipRow label="Size" options={sizes} value={size} onChange={setSize} />
-        <ChipRow label="Type" options={types} value={type} onChange={setType} />
+        <ChipRow
+          label="Type"
+          options={types}
+          value={type}
+          onChange={(nextType) => {
+            if (nextType === 'menu' && variant === 'branded') {
+              setVariant('primaryContainer');
+            }
+            setType(nextType);
+          }}
+        />
         <ChipRow
           label="Position"
           options={positions}
@@ -188,6 +201,7 @@ const FABExample = () => {
         {type === 'icon' && (
           <FAB
             icon="pencil"
+            aria-label="Compose"
             variant={activeVariant}
             containerColor={activeContainerColor}
             size={size}
@@ -215,7 +229,7 @@ const FABExample = () => {
           alignment={position}
           trigger={{
             icon: 'pencil',
-            variant: activeVariant,
+            variant: activeVariant === 'branded' ? undefined : activeVariant,
             containerColor: activeContainerColor,
             size,
             visible: showFab,

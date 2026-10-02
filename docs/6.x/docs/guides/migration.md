@@ -332,9 +332,38 @@ this replaces the built-in margin and disables the focus animation:
 />
 ```
 
+<<<<<<< HEAD
 Any horizontal margin, including `margin`, disables the built-in focus
 animation. Use `marginVertical` when you only need vertical spacing and want to
 keep the animated horizontal margins.
+=======
+### FAB
+
+To preserve the v5 FAB color treatment, update the `variant` prop:
+
+| v5 | v6 |
+| --- | --- |
+| `primary` | `primaryContainer` |
+| `secondary` | `secondaryContainer` |
+| `tertiary` | `tertiaryContainer` |
+
+If you omit `variant`, no change is needed. Replace `variant="surface"` with
+one of the supported color variants, such as `primaryContainer`.
+
+For custom colors, replace `color` with `contentColor` and move
+`style.backgroundColor` to `containerColor`:
+
+```diff
+<FAB
+  icon="plus"
+- color="#ffffff"
+- style={{ backgroundColor: '#6750a4', position: 'absolute', bottom: 16, right: 16 }}
++ contentColor="#ffffff"
++ containerColor="#6750a4"
++ style={{ position: 'absolute', bottom: 16, right: 16 }}
+/>
+```
+>>>>>>> likevy/fix/fab-md3-spec-accuracy
 
 ### TextInput
 
