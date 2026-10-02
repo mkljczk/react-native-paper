@@ -152,6 +152,9 @@ const pages = {
       props: 'TextInputAccessoryProps',
     },
   },
+  Toolbar: {
+    Toolbar: 'Toolbar/Toolbar',
+  },
   Tooltip: {
     Tooltip: 'Tooltip/Tooltip',
     TooltipRich: {
