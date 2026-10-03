@@ -543,6 +543,9 @@ exports[`renders visible menu 1`] = `
               },
               {},
               {
+                "paddingVertical": 8,
+              },
+              {
                 "opacity": 0,
                 "transform": [
                   {
@@ -555,7 +558,7 @@ exports[`renders visible menu 1`] = `
               },
               {},
               {
-                "backgroundColor": "rgba(243, 237, 247, 1)",
+                "backgroundColor": "rgba(247, 242, 250, 1)",
               },
               {
                 "borderBottomEndRadius": undefined,
@@ -565,7 +568,7 @@ exports[`renders visible menu 1`] = `
                 "borderCurve": "continuous",
                 "borderEndEndRadius": undefined,
                 "borderEndStartRadius": undefined,
-                "borderRadius": 4,
+                "borderRadius": 16,
                 "borderStartEndRadius": undefined,
                 "borderStartStartRadius": undefined,
                 "borderTopEndRadius": undefined,
@@ -602,7 +605,7 @@ exports[`renders visible menu 1`] = `
                 {},
                 {},
                 {
-                  "backgroundColor": "rgba(243, 237, 247, 1)",
+                  "backgroundColor": "rgba(247, 242, 250, 1)",
                 },
                 {
                   "borderBottomEndRadius": undefined,
@@ -612,7 +615,7 @@ exports[`renders visible menu 1`] = `
                   "borderCurve": "continuous",
                   "borderEndEndRadius": undefined,
                   "borderEndStartRadius": undefined,
-                  "borderRadius": 4,
+                  "borderRadius": 16,
                   "borderStartEndRadius": undefined,
                   "borderStartStartRadius": undefined,
                   "borderTopEndRadius": undefined,
@@ -648,7 +651,7 @@ exports[`renders visible menu 1`] = `
               accessibilityState={
                 {
                   "busy": undefined,
-                  "checked": undefined,
+                  "checked": false,
                   "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
@@ -680,15 +683,25 @@ exports[`renders visible menu 1`] = `
                   false,
                   [
                     {
-                      "height": 48,
                       "justifyContent": "center",
                       "maxWidth": 280,
                       "minWidth": 112,
+                      "overflow": "hidden",
                     },
                     {
+                      "height": 48,
+                      "maxWidth": 280,
+                      "minHeight": 48,
+                      "minWidth": 112,
                       "paddingHorizontal": 12,
                     },
-                    undefined,
+                    {
+                      "borderBottomLeftRadius": 0,
+                      "borderBottomRightRadius": 0,
+                      "borderTopLeftRadius": 12,
+                      "borderTopRightRadius": 12,
+                    },
+                    null,
                     undefined,
                   ],
                 ]
@@ -698,7 +711,9 @@ exports[`renders visible menu 1`] = `
                 style={
                   [
                     {
+                      "alignItems": "center",
                       "flexDirection": "row",
+                      "maxWidth": 256,
                     },
                     {
                       "opacity": 1,
@@ -712,11 +727,12 @@ exports[`renders visible menu 1`] = `
                   style={
                     [
                       {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                         "justifyContent": "center",
                       },
                       {
                         "maxWidth": 268,
-                        "minWidth": 100,
                       },
                       {
                         "marginLeft": 4,
@@ -741,19 +757,19 @@ exports[`renders visible menu 1`] = `
                         [
                           {
                             "fontFamily": "System",
-                            "fontSize": 16,
-                            "fontWeight": "400",
-                            "letterSpacing": 0.5,
-                            "lineHeight": 24,
+                            "fontSize": 14,
+                            "fontWeight": "500",
+                            "letterSpacing": 0.1,
+                            "lineHeight": 20,
                           },
                           [
                             {
                               "color": "rgba(29, 27, 32, 1)",
                               "fontFamily": "System",
-                              "fontSize": 16,
-                              "fontWeight": "400",
-                              "letterSpacing": 0.5,
-                              "lineHeight": 24,
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.1,
+                              "lineHeight": 20,
                             },
                             undefined,
                           ],
@@ -770,7 +786,7 @@ exports[`renders visible menu 1`] = `
               accessibilityState={
                 {
                   "busy": undefined,
-                  "checked": undefined,
+                  "checked": false,
                   "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
@@ -802,15 +818,25 @@ exports[`renders visible menu 1`] = `
                   false,
                   [
                     {
-                      "height": 48,
                       "justifyContent": "center",
                       "maxWidth": 280,
                       "minWidth": 112,
+                      "overflow": "hidden",
                     },
                     {
+                      "height": 48,
+                      "maxWidth": 280,
+                      "minHeight": 48,
+                      "minWidth": 112,
                       "paddingHorizontal": 12,
                     },
-                    undefined,
+                    {
+                      "borderBottomLeftRadius": 12,
+                      "borderBottomRightRadius": 12,
+                      "borderTopLeftRadius": 0,
+                      "borderTopRightRadius": 0,
+                    },
+                    null,
                     undefined,
                   ],
                 ]
@@ -820,7 +846,9 @@ exports[`renders visible menu 1`] = `
                 style={
                   [
                     {
+                      "alignItems": "center",
                       "flexDirection": "row",
+                      "maxWidth": 256,
                     },
                     {
                       "opacity": 1,
@@ -834,11 +862,12 @@ exports[`renders visible menu 1`] = `
                   style={
                     [
                       {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                         "justifyContent": "center",
                       },
                       {
                         "maxWidth": 268,
-                        "minWidth": 100,
                       },
                       {
                         "marginLeft": 4,
@@ -863,19 +892,19 @@ exports[`renders visible menu 1`] = `
                         [
                           {
                             "fontFamily": "System",
-                            "fontSize": 16,
-                            "fontWeight": "400",
-                            "letterSpacing": 0.5,
-                            "lineHeight": 24,
+                            "fontSize": 14,
+                            "fontWeight": "500",
+                            "letterSpacing": 0.1,
+                            "lineHeight": 20,
                           },
                           [
                             {
                               "color": "rgba(29, 27, 32, 1)",
                               "fontFamily": "System",
-                              "fontSize": 16,
-                              "fontWeight": "400",
-                              "letterSpacing": 0.5,
-                              "lineHeight": 24,
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.1,
+                              "lineHeight": 20,
                             },
                             undefined,
                           ],
@@ -1221,6 +1250,9 @@ exports[`respects anchorPosition bottom 1`] = `
               },
               {},
               {
+                "paddingVertical": 8,
+              },
+              {
                 "opacity": 0,
                 "transform": [
                   {
@@ -1233,7 +1265,7 @@ exports[`respects anchorPosition bottom 1`] = `
               },
               {},
               {
-                "backgroundColor": "rgba(243, 237, 247, 1)",
+                "backgroundColor": "rgba(247, 242, 250, 1)",
               },
               {
                 "borderBottomEndRadius": undefined,
@@ -1243,7 +1275,7 @@ exports[`respects anchorPosition bottom 1`] = `
                 "borderCurve": "continuous",
                 "borderEndEndRadius": undefined,
                 "borderEndStartRadius": undefined,
-                "borderRadius": 4,
+                "borderRadius": 16,
                 "borderStartEndRadius": undefined,
                 "borderStartStartRadius": undefined,
                 "borderTopEndRadius": undefined,
@@ -1281,7 +1313,7 @@ exports[`respects anchorPosition bottom 1`] = `
                 {},
                 {},
                 {
-                  "backgroundColor": "rgba(243, 237, 247, 1)",
+                  "backgroundColor": "rgba(247, 242, 250, 1)",
                 },
                 {
                   "borderBottomEndRadius": undefined,
@@ -1291,7 +1323,7 @@ exports[`respects anchorPosition bottom 1`] = `
                   "borderCurve": "continuous",
                   "borderEndEndRadius": undefined,
                   "borderEndStartRadius": undefined,
-                  "borderRadius": 4,
+                  "borderRadius": 16,
                   "borderStartEndRadius": undefined,
                   "borderStartStartRadius": undefined,
                   "borderTopEndRadius": undefined,
@@ -1327,7 +1359,7 @@ exports[`respects anchorPosition bottom 1`] = `
               accessibilityState={
                 {
                   "busy": undefined,
-                  "checked": undefined,
+                  "checked": false,
                   "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
@@ -1359,15 +1391,25 @@ exports[`respects anchorPosition bottom 1`] = `
                   false,
                   [
                     {
-                      "height": 48,
                       "justifyContent": "center",
                       "maxWidth": 280,
                       "minWidth": 112,
+                      "overflow": "hidden",
                     },
                     {
+                      "height": 48,
+                      "maxWidth": 280,
+                      "minHeight": 48,
+                      "minWidth": 112,
                       "paddingHorizontal": 12,
                     },
-                    undefined,
+                    {
+                      "borderBottomLeftRadius": 0,
+                      "borderBottomRightRadius": 0,
+                      "borderTopLeftRadius": 12,
+                      "borderTopRightRadius": 12,
+                    },
+                    null,
                     undefined,
                   ],
                 ]
@@ -1377,7 +1419,9 @@ exports[`respects anchorPosition bottom 1`] = `
                 style={
                   [
                     {
+                      "alignItems": "center",
                       "flexDirection": "row",
+                      "maxWidth": 256,
                     },
                     {
                       "opacity": 1,
@@ -1391,11 +1435,12 @@ exports[`respects anchorPosition bottom 1`] = `
                   style={
                     [
                       {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                         "justifyContent": "center",
                       },
                       {
                         "maxWidth": 268,
-                        "minWidth": 100,
                       },
                       {
                         "marginLeft": 4,
@@ -1420,19 +1465,19 @@ exports[`respects anchorPosition bottom 1`] = `
                         [
                           {
                             "fontFamily": "System",
-                            "fontSize": 16,
-                            "fontWeight": "400",
-                            "letterSpacing": 0.5,
-                            "lineHeight": 24,
+                            "fontSize": 14,
+                            "fontWeight": "500",
+                            "letterSpacing": 0.1,
+                            "lineHeight": 20,
                           },
                           [
                             {
                               "color": "rgba(29, 27, 32, 1)",
                               "fontFamily": "System",
-                              "fontSize": 16,
-                              "fontWeight": "400",
-                              "letterSpacing": 0.5,
-                              "lineHeight": 24,
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.1,
+                              "lineHeight": 20,
                             },
                             undefined,
                           ],
@@ -1449,7 +1494,7 @@ exports[`respects anchorPosition bottom 1`] = `
               accessibilityState={
                 {
                   "busy": undefined,
-                  "checked": undefined,
+                  "checked": false,
                   "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
@@ -1481,15 +1526,25 @@ exports[`respects anchorPosition bottom 1`] = `
                   false,
                   [
                     {
-                      "height": 48,
                       "justifyContent": "center",
                       "maxWidth": 280,
                       "minWidth": 112,
+                      "overflow": "hidden",
                     },
                     {
+                      "height": 48,
+                      "maxWidth": 280,
+                      "minHeight": 48,
+                      "minWidth": 112,
                       "paddingHorizontal": 12,
                     },
-                    undefined,
+                    {
+                      "borderBottomLeftRadius": 12,
+                      "borderBottomRightRadius": 12,
+                      "borderTopLeftRadius": 0,
+                      "borderTopRightRadius": 0,
+                    },
+                    null,
                     undefined,
                   ],
                 ]
@@ -1499,7 +1554,9 @@ exports[`respects anchorPosition bottom 1`] = `
                 style={
                   [
                     {
+                      "alignItems": "center",
                       "flexDirection": "row",
+                      "maxWidth": 256,
                     },
                     {
                       "opacity": 1,
@@ -1513,11 +1570,12 @@ exports[`respects anchorPosition bottom 1`] = `
                   style={
                     [
                       {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                         "justifyContent": "center",
                       },
                       {
                         "maxWidth": 268,
-                        "minWidth": 100,
                       },
                       {
                         "marginLeft": 4,
@@ -1542,19 +1600,19 @@ exports[`respects anchorPosition bottom 1`] = `
                         [
                           {
                             "fontFamily": "System",
-                            "fontSize": 16,
-                            "fontWeight": "400",
-                            "letterSpacing": 0.5,
-                            "lineHeight": 24,
+                            "fontSize": 14,
+                            "fontWeight": "500",
+                            "letterSpacing": 0.1,
+                            "lineHeight": 20,
                           },
                           [
                             {
                               "color": "rgba(29, 27, 32, 1)",
                               "fontFamily": "System",
-                              "fontSize": 16,
-                              "fontWeight": "400",
-                              "letterSpacing": 0.5,
-                              "lineHeight": 24,
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.1,
+                              "lineHeight": 20,
                             },
                             undefined,
                           ],
@@ -1900,6 +1958,9 @@ exports[`uses the default anchorPosition of top 1`] = `
               },
               {},
               {
+                "paddingVertical": 8,
+              },
+              {
                 "opacity": 0,
                 "transform": [
                   {
@@ -1912,7 +1973,7 @@ exports[`uses the default anchorPosition of top 1`] = `
               },
               {},
               {
-                "backgroundColor": "rgba(243, 237, 247, 1)",
+                "backgroundColor": "rgba(247, 242, 250, 1)",
               },
               {
                 "borderBottomEndRadius": undefined,
@@ -1922,7 +1983,7 @@ exports[`uses the default anchorPosition of top 1`] = `
                 "borderCurve": "continuous",
                 "borderEndEndRadius": undefined,
                 "borderEndStartRadius": undefined,
-                "borderRadius": 4,
+                "borderRadius": 16,
                 "borderStartEndRadius": undefined,
                 "borderStartStartRadius": undefined,
                 "borderTopEndRadius": undefined,
@@ -1960,7 +2021,7 @@ exports[`uses the default anchorPosition of top 1`] = `
                 {},
                 {},
                 {
-                  "backgroundColor": "rgba(243, 237, 247, 1)",
+                  "backgroundColor": "rgba(247, 242, 250, 1)",
                 },
                 {
                   "borderBottomEndRadius": undefined,
@@ -1970,7 +2031,7 @@ exports[`uses the default anchorPosition of top 1`] = `
                   "borderCurve": "continuous",
                   "borderEndEndRadius": undefined,
                   "borderEndStartRadius": undefined,
-                  "borderRadius": 4,
+                  "borderRadius": 16,
                   "borderStartEndRadius": undefined,
                   "borderStartStartRadius": undefined,
                   "borderTopEndRadius": undefined,
@@ -2006,7 +2067,7 @@ exports[`uses the default anchorPosition of top 1`] = `
               accessibilityState={
                 {
                   "busy": undefined,
-                  "checked": undefined,
+                  "checked": false,
                   "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
@@ -2038,15 +2099,25 @@ exports[`uses the default anchorPosition of top 1`] = `
                   false,
                   [
                     {
-                      "height": 48,
                       "justifyContent": "center",
                       "maxWidth": 280,
                       "minWidth": 112,
+                      "overflow": "hidden",
                     },
                     {
+                      "height": 48,
+                      "maxWidth": 280,
+                      "minHeight": 48,
+                      "minWidth": 112,
                       "paddingHorizontal": 12,
                     },
-                    undefined,
+                    {
+                      "borderBottomLeftRadius": 0,
+                      "borderBottomRightRadius": 0,
+                      "borderTopLeftRadius": 12,
+                      "borderTopRightRadius": 12,
+                    },
+                    null,
                     undefined,
                   ],
                 ]
@@ -2056,7 +2127,9 @@ exports[`uses the default anchorPosition of top 1`] = `
                 style={
                   [
                     {
+                      "alignItems": "center",
                       "flexDirection": "row",
+                      "maxWidth": 256,
                     },
                     {
                       "opacity": 1,
@@ -2070,11 +2143,12 @@ exports[`uses the default anchorPosition of top 1`] = `
                   style={
                     [
                       {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                         "justifyContent": "center",
                       },
                       {
                         "maxWidth": 268,
-                        "minWidth": 100,
                       },
                       {
                         "marginLeft": 4,
@@ -2099,19 +2173,19 @@ exports[`uses the default anchorPosition of top 1`] = `
                         [
                           {
                             "fontFamily": "System",
-                            "fontSize": 16,
-                            "fontWeight": "400",
-                            "letterSpacing": 0.5,
-                            "lineHeight": 24,
+                            "fontSize": 14,
+                            "fontWeight": "500",
+                            "letterSpacing": 0.1,
+                            "lineHeight": 20,
                           },
                           [
                             {
                               "color": "rgba(29, 27, 32, 1)",
                               "fontFamily": "System",
-                              "fontSize": 16,
-                              "fontWeight": "400",
-                              "letterSpacing": 0.5,
-                              "lineHeight": 24,
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.1,
+                              "lineHeight": 20,
                             },
                             undefined,
                           ],
@@ -2128,7 +2202,7 @@ exports[`uses the default anchorPosition of top 1`] = `
               accessibilityState={
                 {
                   "busy": undefined,
-                  "checked": undefined,
+                  "checked": false,
                   "disabled": false,
                   "expanded": undefined,
                   "selected": undefined,
@@ -2160,15 +2234,25 @@ exports[`uses the default anchorPosition of top 1`] = `
                   false,
                   [
                     {
-                      "height": 48,
                       "justifyContent": "center",
                       "maxWidth": 280,
                       "minWidth": 112,
+                      "overflow": "hidden",
                     },
                     {
+                      "height": 48,
+                      "maxWidth": 280,
+                      "minHeight": 48,
+                      "minWidth": 112,
                       "paddingHorizontal": 12,
                     },
-                    undefined,
+                    {
+                      "borderBottomLeftRadius": 12,
+                      "borderBottomRightRadius": 12,
+                      "borderTopLeftRadius": 0,
+                      "borderTopRightRadius": 0,
+                    },
+                    null,
                     undefined,
                   ],
                 ]
@@ -2178,7 +2262,9 @@ exports[`uses the default anchorPosition of top 1`] = `
                 style={
                   [
                     {
+                      "alignItems": "center",
                       "flexDirection": "row",
+                      "maxWidth": 256,
                     },
                     {
                       "opacity": 1,
@@ -2192,11 +2278,12 @@ exports[`uses the default anchorPosition of top 1`] = `
                   style={
                     [
                       {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                         "justifyContent": "center",
                       },
                       {
                         "maxWidth": 268,
-                        "minWidth": 100,
                       },
                       {
                         "marginLeft": 4,
@@ -2221,19 +2308,19 @@ exports[`uses the default anchorPosition of top 1`] = `
                         [
                           {
                             "fontFamily": "System",
-                            "fontSize": 16,
-                            "fontWeight": "400",
-                            "letterSpacing": 0.5,
-                            "lineHeight": 24,
+                            "fontSize": 14,
+                            "fontWeight": "500",
+                            "letterSpacing": 0.1,
+                            "lineHeight": 20,
                           },
                           [
                             {
                               "color": "rgba(29, 27, 32, 1)",
                               "fontFamily": "System",
-                              "fontSize": 16,
-                              "fontWeight": "400",
-                              "letterSpacing": 0.5,
-                              "lineHeight": 24,
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.1,
+                              "lineHeight": 20,
                             },
                             undefined,
                           ],

@@ -32,7 +32,10 @@ jest.mock('@react-native-vector-icons/material-design-icons', () => {
 jest.mock('react-native', () => {
   const RN = jest.requireActual('react-native');
 
-  const timing = (value, config) => {
+  // Stub Animated drivers that hit the native driver. Real spring/timing with
+  // useNativeDriver fails under Jest ("Unable to locate attached view").
+  // setValue + finished callback keeps production code paths intact.
+  const createAnimatedDriver = (value, config) => {
     const animation = {
       start: (callback) => {
         setTimeout(() => {
@@ -54,6 +57,9 @@ jest.mock('react-native', () => {
 
     return animation;
   };
+
+  const timing = (value, config) => createAnimatedDriver(value, config);
+  const spring = (value, config) => createAnimatedDriver(value, config);
 
   const loop = (animation) => {
     return {
@@ -84,6 +90,7 @@ jest.mock('react-native', () => {
   });
 
   RN.Animated.timing = timing;
+  RN.Animated.spring = spring;
   RN.Animated.loop = loop;
   RN.Animated.parallel = parallel;
 

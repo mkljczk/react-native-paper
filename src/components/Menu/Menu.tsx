@@ -29,7 +29,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { scheduleOnRN } from 'react-native-worklets';
 import useLatestCallback from 'use-latest-callback';
 
+import { MenuItemPositionContext, MenuRootContext } from './context';
 import MenuItem from './MenuItem';
+import { MenuTokens, type MenuColorScheme } from './tokens';
+import { getMenuContainerBorderRadius, getMenuContainerColor } from './utils';
 import { useLocale } from '../../core/locale';
 import { useInternalTheme } from '../../core/theming';
 import type { Elevation, ThemeProp } from '../../theme/types';
@@ -38,6 +41,11 @@ import { BackHandler } from '../../utils/BackHandler/BackHandler';
 import Portal from '../Portal/Portal';
 import Surface from '../Surface';
 import type { SurfaceStyle } from '../Surface';
+
+const isMenuItemElement = (
+  child: React.ReactNode
+): child is React.ReactElement<React.ComponentProps<typeof MenuItem>> =>
+  React.isValidElement(child) && child.type === MenuItem;
 
 export type Props = {
   /**
@@ -82,7 +90,7 @@ export type Props = {
   contentStyle?: StyleProp<SurfaceStyle>;
   style?: StyleProp<ViewStyle>;
   /**
-   * Elevation level of the menu's content. Shadow styles are calculated based on this value. The menu background is `theme.colors.surfaceContainer` per the MD3 spec and is not affected by `elevation`. By default equals `2`.
+   * Elevation level of the menu's content. Shadow styles are calculated based on this value. The menu fill is the MD3 `surfaceContainerLow` role (standard scheme) and is not affected by `elevation` — elevation controls the shadow only. By default equals `2`.
    * @supported Available in v5.x with theme version 3
    */
   elevation?: Elevation;
@@ -94,6 +102,12 @@ export type Props = {
    * @supported Available in v5.x with theme version 3
    */
   mode?: 'flat' | 'elevated';
+  /**
+   * Color scheme for the menu surface and its items.
+   * - `standard` (default) — `surfaceContainerLow` fill + onSurface content
+   * - `vibrant` — M3 Expressive tertiary roles
+   */
+  colorScheme?: MenuColorScheme;
   /**
    * @optional
    */
@@ -109,15 +123,16 @@ export type Props = {
 };
 
 // Minimum padding between the edge of the screen and the menu
-const SCREEN_INDENT = 8;
+const SCREEN_INDENT = MenuTokens.sizes.screenIndent;
+
+const WINDOW_LAYOUT = Dimensions.get('window');
+
 // From https://material.io/design/motion/speed.html#duration
 const ANIMATION_DURATION = 250;
 // From the 'Standard easing' section of https://material.io/design/motion/speed.html#easing
 const EASING = Easing.bezier(0.4, 0, 0.2, 1);
 
-const WINDOW_LAYOUT = Dimensions.get('window');
-
-const DEFAULT_ELEVATION: Elevation = 2;
+const DEFAULT_ELEVATION: Elevation = MenuTokens.elevation.default;
 const DEFAULT_MODE = 'elevated';
 
 const focusFirstDOMNode = (el: View | null | undefined) => {
@@ -141,6 +156,10 @@ const isCoordinate = (anchor: any): anchor is { x: number; y: number } =>
 
 /**
  * Menus display a list of choices on temporary elevated surfaces. Their placement varies based on the element that opens them.
+ *
+ * Follows [Material Design 3 menus](https://m3.material.io/components/menus/specs): container
+ * `corner.large`, fill `surfaceContainerLow` (elevation controls shadow only), item label
+ * `labelLarge`, selected items use `tertiaryContainer` / `onTertiaryContainer`.
  *
  * ## Usage
  * ```js
@@ -167,10 +186,24 @@ const isCoordinate = (anchor: any): anchor is { x: number; y: number } =>
  *           visible={visible}
  *           onDismiss={closeMenu}
  *           anchor={<Button onPress={openMenu}>Show menu</Button>}>
- *           <Menu.Item onPress={() => {}} title="Item 1" />
- *           <Menu.Item onPress={() => {}} title="Item 2" />
+ *           <Menu.Item
+ *             leadingIcon="content-paste"
+ *             onPress={() => {}}
+ *             title="Paste"
+ *             supportingText="Insert clipboard"
+ *             trailingSupportingText="⌘V"
+ *             selected
+ *           />
+ *           <Menu.Item onPress={() => {}} title="Undo" />
  *           <Divider />
- *           <Menu.Item onPress={() => {}} title="Item 3" />
+ *           <Menu.Item onPress={() => {}} title="Share" dense />
+ *         </Menu>
+ *         <Menu
+ *           visible={false}
+ *           onDismiss={() => {}}
+ *           colorScheme="vibrant"
+ *           anchor={<Button onPress={() => {}}>Vibrant</Button>}>
+ *           <Menu.Item onPress={() => {}} title="Featured" selected />
  *         </Menu>
  *       </View>
  *     </PaperProvider>
@@ -199,6 +232,7 @@ const Menu = ({
   style,
   elevation = DEFAULT_ELEVATION,
   mode = DEFAULT_MODE,
+  colorScheme = 'standard',
   children,
   theme: themeOverrides,
   keyboardShouldPersistTaps,
@@ -670,6 +704,40 @@ const Menu = ({
 
   const pointerEvents = visible ? 'box-none' : 'none';
 
+  const rootContext = React.useMemo(() => ({ colorScheme }), [colorScheme]);
+
+  // Positional only, like `Card.Actions`. Nothing is injected into children —
+  // `colorScheme` comes from `MenuRootContext`, so wrappers keep working.
+  const items = React.Children.toArray(children);
+  const firstItemIndex = items.findIndex(isMenuItemElement);
+  const lastItemIndex = items.reduce(
+    (last, child, index) => (isMenuItemElement(child) ? index : last),
+    -1
+  );
+  const renderedChildren = items.map((child, index) => {
+    if (!isMenuItemElement(child)) {
+      return child;
+    }
+
+    return (
+      <MenuItemPositionContext.Provider
+        key={child.key ?? index}
+        value={{
+          roundedTop: index === firstItemIndex,
+          roundedBottom: index === lastItemIndex,
+        }}
+      >
+        {child}
+      </MenuItemPositionContext.Provider>
+    );
+  });
+
+  const surfaceBackground = getMenuContainerColor({
+    theme,
+    elevation,
+    colorScheme,
+  });
+
   return (
     <View
       ref={(ref) => {
@@ -704,33 +772,38 @@ const Menu = ({
             >
               <Surface
                 mode={mode}
-                container="surfaceContainer"
-                borderRadius={theme.shapes.corner.extraSmall}
+                backgroundColor={surfaceBackground}
+                borderRadius={getMenuContainerBorderRadius(theme)}
                 style={[
                   styles.shadowMenuContainer,
                   { pointerEvents },
                   shadowMenuContainerStyle,
+                  {
+                    paddingVertical: MenuTokens.sizes.containerPaddingVertical,
+                  },
                   shadowMenuAnimationStyle,
                 ]}
                 elevation={elevation}
                 testID={testID}
                 theme={theme}
               >
-                <Animated.View
-                  style={[
-                    styles.menuContent,
-                    Boolean(scrollableMenuHeight) && styles.fill,
-                    contentStyle,
-                  ]}
-                >
-                  {(scrollableMenuHeight && (
-                    <ScrollView
-                      keyboardShouldPersistTaps={keyboardShouldPersistTaps}
-                    >
-                      {children}
-                    </ScrollView>
-                  )) || <React.Fragment>{children}</React.Fragment>}
-                </Animated.View>
+                <MenuRootContext.Provider value={rootContext}>
+                  <Animated.View
+                    style={[
+                      styles.menuContent,
+                      Boolean(scrollableMenuHeight) && styles.fill,
+                      contentStyle,
+                    ]}
+                  >
+                    {(scrollableMenuHeight && (
+                      <ScrollView
+                        keyboardShouldPersistTaps={keyboardShouldPersistTaps}
+                      >
+                        {children}
+                      </ScrollView>
+                    )) || <React.Fragment>{renderedChildren}</React.Fragment>}
+                  </Animated.View>
+                </MenuRootContext.Provider>
               </Surface>
             </Animated.View>
           </View>

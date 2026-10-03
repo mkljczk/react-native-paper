@@ -6,7 +6,7 @@ exports[`Menu Item renders menu item 1`] = `
     accessibilityState={
       {
         "busy": undefined,
-        "checked": undefined,
+        "checked": false,
         "disabled": false,
         "expanded": undefined,
         "selected": undefined,
@@ -38,25 +38,38 @@ exports[`Menu Item renders menu item 1`] = `
         false,
         [
           {
-            "height": 48,
             "justifyContent": "center",
             "maxWidth": 280,
             "minWidth": 112,
+            "overflow": "hidden",
           },
           {
+            "height": 48,
+            "maxWidth": 280,
+            "minHeight": 48,
+            "minWidth": 112,
             "paddingHorizontal": 12,
           },
-          undefined,
+          {
+            "borderBottomLeftRadius": 0,
+            "borderBottomRightRadius": 0,
+            "borderTopLeftRadius": 0,
+            "borderTopRightRadius": 0,
+          },
+          null,
           undefined,
         ],
       ]
     }
+    testID="menu-item"
   >
     <View
       style={
         [
           {
+            "alignItems": "center",
             "flexDirection": "row",
+            "maxWidth": 256,
           },
           {
             "opacity": 1,
@@ -64,6 +77,7 @@ exports[`Menu Item renders menu item 1`] = `
           undefined,
         ]
       }
+      testID="menu-item-content"
     >
       <View
         pointerEvents="box-none"
@@ -71,6 +85,9 @@ exports[`Menu Item renders menu item 1`] = `
           [
             {
               "width": 24,
+            },
+            {
+              "flexShrink": 0,
             },
           ]
         }
@@ -110,11 +127,12 @@ exports[`Menu Item renders menu item 1`] = `
         style={
           [
             {
+              "flexGrow": 1,
+              "flexShrink": 1,
               "justifyContent": "center",
             },
             {
               "maxWidth": 232,
-              "minWidth": 100,
             },
             {
               "marginLeft": 12,
@@ -139,19 +157,19 @@ exports[`Menu Item renders menu item 1`] = `
               [
                 {
                   "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.5,
-                  "lineHeight": 24,
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.1,
+                  "lineHeight": 20,
                 },
                 [
                   {
                     "color": "rgba(29, 27, 32, 1)",
                     "fontFamily": "System",
-                    "fontSize": 16,
-                    "fontWeight": "400",
-                    "letterSpacing": 0.5,
-                    "lineHeight": 24,
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 0.1,
+                    "lineHeight": 20,
                   },
                   undefined,
                 ],
@@ -168,7 +186,7 @@ exports[`Menu Item renders menu item 1`] = `
     accessibilityState={
       {
         "busy": undefined,
-        "checked": undefined,
+        "checked": false,
         "disabled": false,
         "expanded": undefined,
         "selected": undefined,
@@ -200,25 +218,38 @@ exports[`Menu Item renders menu item 1`] = `
         false,
         [
           {
-            "height": 48,
             "justifyContent": "center",
             "maxWidth": 280,
             "minWidth": 112,
+            "overflow": "hidden",
           },
           {
+            "height": 48,
+            "maxWidth": 280,
+            "minHeight": 48,
+            "minWidth": 112,
             "paddingHorizontal": 12,
           },
-          undefined,
+          {
+            "borderBottomLeftRadius": 0,
+            "borderBottomRightRadius": 0,
+            "borderTopLeftRadius": 0,
+            "borderTopRightRadius": 0,
+          },
+          null,
           undefined,
         ],
       ]
     }
+    testID="menu-item"
   >
     <View
       style={
         [
           {
+            "alignItems": "center",
             "flexDirection": "row",
+            "maxWidth": 256,
           },
           {
             "opacity": 1,
@@ -226,6 +257,7 @@ exports[`Menu Item renders menu item 1`] = `
           undefined,
         ]
       }
+      testID="menu-item-content"
     >
       <View
         pointerEvents="box-none"
@@ -233,6 +265,9 @@ exports[`Menu Item renders menu item 1`] = `
           [
             {
               "width": 24,
+            },
+            {
+              "flexShrink": 0,
             },
           ]
         }
@@ -272,11 +307,12 @@ exports[`Menu Item renders menu item 1`] = `
         style={
           [
             {
+              "flexGrow": 1,
+              "flexShrink": 1,
               "justifyContent": "center",
             },
             {
               "maxWidth": 232,
-              "minWidth": 100,
             },
             {
               "marginLeft": 12,
@@ -301,19 +337,19 @@ exports[`Menu Item renders menu item 1`] = `
               [
                 {
                   "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.5,
-                  "lineHeight": 24,
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.1,
+                  "lineHeight": 20,
                 },
                 [
                   {
                     "color": "rgba(29, 27, 32, 1)",
                     "fontFamily": "System",
-                    "fontSize": 16,
-                    "fontWeight": "400",
-                    "letterSpacing": 0.5,
-                    "lineHeight": 24,
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 0.1,
+                    "lineHeight": 20,
                   },
                   undefined,
                 ],
@@ -330,7 +366,7 @@ exports[`Menu Item renders menu item 1`] = `
     accessibilityState={
       {
         "busy": undefined,
-        "checked": undefined,
+        "checked": false,
         "disabled": true,
         "expanded": undefined,
         "selected": undefined,
@@ -362,25 +398,38 @@ exports[`Menu Item renders menu item 1`] = `
         false,
         [
           {
-            "height": 48,
             "justifyContent": "center",
             "maxWidth": 280,
             "minWidth": 112,
+            "overflow": "hidden",
           },
           {
+            "height": 48,
+            "maxWidth": 280,
+            "minHeight": 48,
+            "minWidth": 112,
             "paddingHorizontal": 12,
           },
-          undefined,
+          {
+            "borderBottomLeftRadius": 0,
+            "borderBottomRightRadius": 0,
+            "borderTopLeftRadius": 0,
+            "borderTopRightRadius": 0,
+          },
+          null,
           undefined,
         ],
       ]
     }
+    testID="menu-item"
   >
     <View
       style={
         [
           {
+            "alignItems": "center",
             "flexDirection": "row",
+            "maxWidth": 256,
           },
           {
             "opacity": 0.38,
@@ -388,6 +437,7 @@ exports[`Menu Item renders menu item 1`] = `
           undefined,
         ]
       }
+      testID="menu-item-content"
     >
       <View
         pointerEvents="box-none"
@@ -395,6 +445,9 @@ exports[`Menu Item renders menu item 1`] = `
           [
             {
               "width": 24,
+            },
+            {
+              "flexShrink": 0,
             },
           ]
         }
@@ -434,11 +487,12 @@ exports[`Menu Item renders menu item 1`] = `
         style={
           [
             {
+              "flexGrow": 1,
+              "flexShrink": 1,
               "justifyContent": "center",
             },
             {
               "maxWidth": 232,
-              "minWidth": 100,
             },
             {
               "marginLeft": 12,
@@ -463,19 +517,19 @@ exports[`Menu Item renders menu item 1`] = `
               [
                 {
                   "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.5,
-                  "lineHeight": 24,
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.1,
+                  "lineHeight": 20,
                 },
                 [
                   {
                     "color": "rgba(29, 27, 32, 1)",
                     "fontFamily": "System",
-                    "fontSize": 16,
-                    "fontWeight": "400",
-                    "letterSpacing": 0.5,
-                    "lineHeight": 24,
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 0.1,
+                    "lineHeight": 20,
                   },
                   undefined,
                 ],
@@ -492,7 +546,7 @@ exports[`Menu Item renders menu item 1`] = `
     accessibilityState={
       {
         "busy": undefined,
-        "checked": undefined,
+        "checked": false,
         "disabled": true,
         "expanded": undefined,
         "selected": undefined,
@@ -524,25 +578,38 @@ exports[`Menu Item renders menu item 1`] = `
         false,
         [
           {
-            "height": 48,
             "justifyContent": "center",
             "maxWidth": 280,
             "minWidth": 112,
+            "overflow": "hidden",
           },
           {
+            "height": 48,
+            "maxWidth": 280,
+            "minHeight": 48,
+            "minWidth": 112,
             "paddingHorizontal": 12,
           },
-          undefined,
+          {
+            "borderBottomLeftRadius": 0,
+            "borderBottomRightRadius": 0,
+            "borderTopLeftRadius": 0,
+            "borderTopRightRadius": 0,
+          },
+          null,
           undefined,
         ],
       ]
     }
+    testID="menu-item"
   >
     <View
       style={
         [
           {
+            "alignItems": "center",
             "flexDirection": "row",
+            "maxWidth": 256,
           },
           {
             "opacity": 0.38,
@@ -550,6 +617,7 @@ exports[`Menu Item renders menu item 1`] = `
           undefined,
         ]
       }
+      testID="menu-item-content"
     >
       <View
         pointerEvents="box-none"
@@ -557,6 +625,9 @@ exports[`Menu Item renders menu item 1`] = `
           [
             {
               "width": 24,
+            },
+            {
+              "flexShrink": 0,
             },
           ]
         }
@@ -596,11 +667,12 @@ exports[`Menu Item renders menu item 1`] = `
         style={
           [
             {
+              "flexGrow": 1,
+              "flexShrink": 1,
               "justifyContent": "center",
             },
             {
               "maxWidth": 232,
-              "minWidth": 100,
             },
             {
               "marginLeft": 12,
@@ -625,19 +697,19 @@ exports[`Menu Item renders menu item 1`] = `
               [
                 {
                   "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.5,
-                  "lineHeight": 24,
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.1,
+                  "lineHeight": 20,
                 },
                 [
                   {
                     "color": "rgba(29, 27, 32, 1)",
                     "fontFamily": "System",
-                    "fontSize": 16,
-                    "fontWeight": "400",
-                    "letterSpacing": 0.5,
-                    "lineHeight": 24,
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 0.1,
+                    "lineHeight": 20,
                   },
                   undefined,
                 ],
@@ -654,7 +726,7 @@ exports[`Menu Item renders menu item 1`] = `
     accessibilityState={
       {
         "busy": undefined,
-        "checked": undefined,
+        "checked": false,
         "disabled": false,
         "expanded": undefined,
         "selected": undefined,
@@ -686,25 +758,38 @@ exports[`Menu Item renders menu item 1`] = `
         false,
         [
           {
-            "height": 48,
             "justifyContent": "center",
             "maxWidth": 280,
             "minWidth": 112,
+            "overflow": "hidden",
           },
           {
+            "height": 48,
+            "maxWidth": 280,
+            "minHeight": 48,
+            "minWidth": 112,
             "paddingHorizontal": 12,
           },
-          undefined,
+          {
+            "borderBottomLeftRadius": 0,
+            "borderBottomRightRadius": 0,
+            "borderTopLeftRadius": 0,
+            "borderTopRightRadius": 0,
+          },
+          null,
           undefined,
         ],
       ]
     }
+    testID="menu-item"
   >
     <View
       style={
         [
           {
+            "alignItems": "center",
             "flexDirection": "row",
+            "maxWidth": 256,
           },
           {
             "opacity": 1,
@@ -712,17 +797,19 @@ exports[`Menu Item renders menu item 1`] = `
           undefined,
         ]
       }
+      testID="menu-item-content"
     >
       <View
         pointerEvents="none"
         style={
           [
             {
+              "flexGrow": 1,
+              "flexShrink": 1,
               "justifyContent": "center",
             },
             {
               "maxWidth": 268,
-              "minWidth": 100,
             },
             {
               "marginLeft": 4,
@@ -747,19 +834,19 @@ exports[`Menu Item renders menu item 1`] = `
               [
                 {
                   "fontFamily": "System",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "letterSpacing": 0.5,
-                  "lineHeight": 24,
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.1,
+                  "lineHeight": 20,
                 },
                 [
                   {
                     "color": "rgba(29, 27, 32, 1)",
                     "fontFamily": "System",
-                    "fontSize": 16,
-                    "fontWeight": "400",
-                    "letterSpacing": 0.5,
-                    "lineHeight": 24,
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 0.1,
+                    "lineHeight": 20,
                   },
                   undefined,
                 ],
