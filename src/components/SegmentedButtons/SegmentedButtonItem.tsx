@@ -20,6 +20,7 @@ import {
   getSegmentedButtonColors,
   getSegmentedButtonDensityPadding,
 } from './utils';
+import { useLocale } from '../../core/locale';
 import { useInternalTheme } from '../../core/theming';
 import { useReduceMotion } from '../../theme/accessibility/ReduceMotionContext';
 import type { ThemeProp } from '../../theme/types';
@@ -136,6 +137,8 @@ const SegmentedButtonItem = ({
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
   const reduceMotion = useReduceMotion();
+  const { direction } = useLocale();
+  const isRTL = direction === 'rtl';
 
   const checkScale = useSharedValue(0);
 
@@ -172,6 +175,7 @@ const SegmentedButtonItem = ({
   const segmentBorderRadius = getSegmentedButtonBorderRadius({
     theme,
     segment,
+    isRTL,
   });
 
   const showIcon = !icon ? false : label && checked ? !showSelectedCheck : true;

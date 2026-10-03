@@ -60,17 +60,19 @@ export const getDisabledSegmentedButtonStyle = ({
 
 export const getSegmentedButtonBorderRadius = ({
   segment,
+  isRTL,
 }: {
   theme: InternalTheme;
   segment?: 'first' | 'last';
+  isRTL: boolean;
 }): ViewStyle => {
-  if (segment === 'first') {
+  if (segment === (isRTL ? 'last' : 'first')) {
     return {
       borderTopRightRadius: 0,
       borderBottomRightRadius: 0,
       borderEndWidth: 0,
     };
-  } else if (segment === 'last') {
+  } else if (segment === (isRTL ? 'first' : 'last')) {
     return {
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0,
