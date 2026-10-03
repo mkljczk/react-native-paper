@@ -37,6 +37,7 @@ import SegmentedButtonRealCase from './Examples/SegmentedButtons/SegmentedButton
 import SegmentedButtonExample from './Examples/SegmentedButtonsExample';
 import SliderExample from './Examples/SliderExample';
 import SnackbarExample from './Examples/SnackbarExample';
+import SplitButtonExample from './Examples/SplitButtonExample';
 import SurfaceExample from './Examples/SurfaceExample';
 import SwitchExample from './Examples/SwitchExample';
 import TeamDetails from './Examples/TeamDetails';
@@ -81,6 +82,7 @@ export const mainExamples = {
   SegmentedButton: SegmentedButtonExample,
   Slider: SliderExample,
   Snackbar: SnackbarExample,
+  SplitButton: SplitButtonExample,
   Surface: SurfaceExample,
   Switch: SwitchExample,
   Text: TextExample,

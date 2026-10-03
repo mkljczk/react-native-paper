@@ -132,6 +132,10 @@ export const screenshots = {
     vertical: 'screenshots/slider-vertical.png',
   },
   Snackbar: 'screenshots/snackbar.gif',
+  SplitButton: {
+    collapsed: 'screenshots/split-button-collapsed.png',
+    expanded: 'screenshots/split-button-expanded.png',
+  },
   Surface: {
     elevated: 'screenshots/surface-elevated-full-width.png',
     flat: 'screenshots/surface-flat-full-width.png',

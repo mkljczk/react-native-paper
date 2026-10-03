@@ -139,6 +139,9 @@ const pages = {
     Slider: 'Slider/Slider',
   },
   Snackbar: 'Snackbar',
+  SplitButton: {
+    SplitButton: 'SplitButton/SplitButton',
+  },
   Surface: 'Surface',
   Switch: {
     Switch: 'Switch/Switch',
