@@ -387,7 +387,7 @@ const Chip = ({
             {children}
           </Text>
           {rightIcon ? (
-            <View style={[styles.icon, styles.md3Icon]}>
+            <View style={[styles.icon, styles.md3IconRight]}>
               <Icon
                 source={rightIcon}
                 color={!disabled ? theme.colors.primary : iconColor}
@@ -451,6 +451,10 @@ const styles = StyleSheet.create({
   md3Icon: {
     paddingLeft: 8,
     paddingRight: 0,
+  },
+  md3IconRight: {
+    paddingLeft: 0,
+    paddingRight: 8,
   },
   closeIcon: {
     marginRight: 4,
