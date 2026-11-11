@@ -267,7 +267,10 @@ const Chip = ({
   const multiplier = compact ? 1.5 : 2;
 
   const labelSpacings = {
-    marginRight: onClose ? 0 : 8 * multiplier,
+    marginRight:
+      onClose ? 0 : rightIcon
+        ? 4 * multipler
+        : 8 * multiplier,
     marginLeft:
       avatar || icon || (selected && showSelectedCheck)
         ? 4 * multiplier
