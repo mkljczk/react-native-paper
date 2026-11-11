@@ -269,7 +269,7 @@ const Chip = ({
   const labelSpacings = {
     marginRight:
       onClose ? 0 : rightIcon
-        ? 4 * multipler
+        ? 4 * multiplier
         : 8 * multiplier,
     marginLeft:
       avatar || icon || (selected && showSelectedCheck)
