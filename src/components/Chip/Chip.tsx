@@ -43,6 +43,10 @@ export type Props = Omit<ViewProps, 'style'> & {
    */
   icon?: IconSource;
   /**
+   * Icon to display on the right of the `Chip`.
+   */
+  rightIcon?: IconSource;
+  /**
    * Avatar to display for the `Chip`. Both icon and avatar cannot be specified.
    */
   avatar?: React.ReactNode;
@@ -183,6 +187,7 @@ const Chip = ({
   mode = 'flat',
   children,
   icon,
+  rightIcon,
   avatar,
   selected = false,
   disabled = false,
@@ -381,6 +386,16 @@ const Chip = ({
           >
             {children}
           </Text>
+          {rightIcon ? (
+            <View style={[styles.icon, styles.md3Icon]}>
+              <Icon
+                source={rightIcon}
+                color={!disabled ? theme.colors.primary : iconColor}
+                size={18}
+                theme={theme}
+              />
+            </View>
+          ) : null}
         </View>
       </TouchableRipple>
       {onClose ? (
